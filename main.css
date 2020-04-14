@@ -10,7 +10,9 @@
 /* Pozicionálás */
 
 .profile-card {
-  width: 480px;
+  height: 580px;
+  max-height: calc(100vh - 10px);
+  width: 580px;
   max-width: calc(100vw - 10px);
   background-color: hsla(0, 0%, 100%, .5);
   border-radius: 5%;
@@ -21,7 +23,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;      background:url('https://images6.alphacoders.com/712/thumb-1920-712406.jpg') no-repeat center center fixed;
+  height: 100vh; 
+  background:url('https://images6.alphacoders.com/712/thumb-1920-712406.jpg') no-repeat center center fixed;
   background-size: cover;
   font-family: Georgia, serif;
 }
@@ -30,14 +33,31 @@ body {
   text-align: center;
 }
 
+.head {
+  height: 160px;
+  position: relative;
+}
+
 .head, .content {
   width: 90%;
-  margin: 0 auto;
+  margin: 10px auto;
+}
+
+#arckep {
+  width: 140px;
+  height: 150px;
+  float: left;
+}
+
+.name-headline {
+  position: absolute;
+  top: 28%;
+  left: 210px;
 }
 
 img {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 20%;
   padding: 3px;
   background-color: #8B0000;
@@ -53,12 +73,8 @@ h2 {
   padding: 5px;
 }
 
-.profile-image {
-  margin-top: -40px;
-}
-
 #kutya {
-  margin-left: 30px;
+  margin-left: 60px;
 }
 
 .about, .comment {
@@ -69,6 +85,7 @@ h2 {
 
 ul {
   list-style-type: none;
+  
 }
 
 li {
@@ -76,8 +93,8 @@ li {
 }
 
 
-.head, .about {
-  margin-bottom: 10px;
+.head, .about, .comment {
+  margin-bottom: 15px;
 }
 
 .content {
@@ -91,7 +108,7 @@ img:hover {
 }
 
 a:link {
-  padding: 20px;
+  padding: 40px;
   color: #404040;
 }
 
